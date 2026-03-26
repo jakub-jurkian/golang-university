@@ -1,0 +1,20 @@
+1. Definicja danych - Modelowanie domeny
+- uczestnik: imie napis, repertuar tablica napisow, oceny wycinek wycinka (w js bym zrobil tablica obiektow repertuaru i do niego ocena)
+encje, relacje, wybór struktur
+
+2. Małe funkcje Dekompozycja Algorytmu (Zasada Jednej Odpowiedzialności)
+ROZBICIE PROBLEMU NA MAŁE CZYSTE FUNKCJE
+- do sr arytm.
+- korekcyjna - logika biznesowa, moglaby być wstrzyknięta jako parametr
+- orkiestrator - fn przekazuje dane przez funkcje
+
+3. Funkcja transformująca Zapewnienie elastyczności (Inversion of Control)
+NIE UŻYWAMY SZTYWNYCH DANYCH NP IF PHASE == 1
+DEFINIUJEMY INTERFEJS LUB TYP FUNKCJI.
+np. - type RatingStrategy func([]int) float64
+
+4. Logika sortująca - Niezmienność Danych (Immutability)
+make i copy.
+Bo w systemach wielowątkowych modyfikowanie tej samej tablicy z różnych miejsc to przepis na katastrofę.
+
+5. Warstwa Prezentacji (Oddzielenie logiki od IO)

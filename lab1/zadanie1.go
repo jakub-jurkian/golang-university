@@ -31,8 +31,8 @@ func main() {
 	fmt.Println("Bez zmiany (N=3):", liczbaTrafionychLosowan)
 
 	// 2 czesc
-	n = 3
-	k := 1
+	n = 100
+	k := 98
 	liczbaTrafionychLosowanZeZmiana := 0
 
 	for i := 0; i < proby; i++ {
@@ -85,5 +85,5 @@ func main() {
 		}
 	}
 
-	fmt.Println("Ze zmiana (N=3, K=1):", liczbaTrafionychLosowanZeZmiana)
+	fmt.Println("Ze zmiana (N=100, K=98):", liczbaTrafionychLosowanZeZmiana)
 }
